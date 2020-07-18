@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txN1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margenx_1"
+                android:layout_marginTop="@dimen/margeny_1"
+                android:text="@string/nombre"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/texto_2"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/txN2"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margenx_1"
+                android:autofillHints="username"
+                android:inputType="text"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/textos_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txN1" />
+            <TextView
+                android:id="@+id/txf1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margenx_1"
+                android:text="@string/fecha"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/texto_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txN2"  />
+
+            <TextView
+                android:id="@+id/txf2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/textos_1"
+                android:layout_marginStart="@dimen/margenx_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txf1" />
+
+            <Button
+                android:id="@+id/btf1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margeny_2"
+                android:text="@string/deffecha"
+                android:theme="@style/Button1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txf2" />
+
+            <TextView
+                android:id="@+id/txT1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/telefono"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/texto_2"
+                android:layout_marginStart="@dimen/margenx_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btf1"/>
+
+            <EditText
+                android:id="@+id/edT1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="Phone"
+                android:inputType="phone"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/textos_1"
+                android:layout_marginStart="@dimen/margenx_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txT1"/>
+            <TextView
+                android:id="@+id/txE1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/texto_2"
+                android:layout_marginStart="@dimen/margenx_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edT1" />
+            <EditText
+                android:id="@+id/edE1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/textos_1"
+                android:layout_marginStart="@dimen/margenx_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txE1"  />
+            <TextView
+                android:id="@+id/txDC1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/texto_2"
+                android:layout_marginStart="@dimen/margenx_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edE1"  />
+
+            <EditText
+                android:id="@+id/edDC1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/textos_1"
+                android:layout_marginStart="@dimen/margenx_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txDC1" />
+            <Button
+                android:id="@+id/btnx2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:theme="@style/Button1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edDC1"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ProyectoSemana2</string>
+    <string name="nombre">Nombre Usuario</string>
+    <string name="nombrere">Nombre </string>
+    <string name="fecha">Fecha de Nacimiento</string>
+    <string name="fechare">Fecha Nacimiento</string>
+    <string name="deffecha">Calendario</string>
+    <string name="telefono">Telefono</string>
+    <string name="telefonore">Telefono Usuario</string>
+    <string name="email">Correo Electronico</string>
+    <string name="emailre">Correo</string>
+    <string name="descripcion">Descripcion Contacto</string>
+    <string name="next">Siguiente </string>
+
+    <string name="confirmar">Confirmar Datos</string>
+    <string name="nombreus">Nombre: </string>
+    <string name="tel">Tel:</string>
+    <string name="nas">Fecha de Nacimiento:</string>
+    <string name="correo">Correo:</string>
+    <string name="descrip">Descripcion:</string>
+    <string name="edit">Editar Datos</string>
+
+    <string name="pnombre">nombre</string>
+    <string name="pfecha">fecha</string>
+    <string name="ptelefono">telefono</string>
+    <string name="pcorreo">correo</string>
+    <string name="pdescripcion">descripcion</string>
+
+    <string name="prnombre">nombre</string>
+    <string name="prfecha">fecha</string>
+    <string name="prtelefono">telefono</string>
+    <string name="prcorreo">correo</string>
+    <string name="prdescripcion">descripcion</string>
+
+</resources>
