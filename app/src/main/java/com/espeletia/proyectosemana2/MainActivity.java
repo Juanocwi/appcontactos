@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -15,32 +16,20 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
     private TextView fecha;
+    private Button btnx2;
+    private EditText nombre,telefono, correo, descripcion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
-        fecha = findViewById(R.id.txf2);
-        String nombreR = "";
+        fecha =         findViewById(R.id.txf2);
+        nombre =        findViewById(R.id.txN2);
+        telefono =      findViewById(R.id.edT1);
+        correo =        findViewById(R.id.edE1);
+        descripcion =   findViewById(R.id.edDC1);
 
-//        Bundle cambio =getIntent().getExtras();
-//        nombreR =     cambio.getString(getResources().getString(R.string.prnombre));
-//        String fechaR =      cambio.getString(getResources().getString(R.string.prfecha));
-//        String telefonoR =   cambio.getString(getResources().getString(R.string.prtelefono));
-//        String correoR =     cambio.getString(getResources().getString(R.string.prcorreo));
-//        String descripcionR =cambio.getString(getResources().getString(R.string.prdescripcion));
-
-//        EditText txN2 =(EditText) findViewById(R.id.txN2);
-//        TextView txf2 =(TextView) findViewById(R.id.txf2);
-//        EditText edT1 =(EditText) findViewById(R.id.edT1);
-//        EditText edE1 =(EditText) findViewById(R.id.edE1);
-//        EditText edDC1 =(EditText) findViewById(R.id.edDC1);
-//
-//        txN2.setText(nombreR);
-//        txf2.setText(fechaR);
-//        edT1.setText(telefonoR);
-//        edE1.setText(correoR);
-//        edDC1.setText(descripcionR);
 
         findViewById(R.id.btf1).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 intent.putExtra(getResources().getString(R.string.pcorreo),email);
                 intent.putExtra(getResources().getString(R.string.pdescripcion), description);
                 startActivity(intent);
-                finish();
+                //finish();
 
             }
         });

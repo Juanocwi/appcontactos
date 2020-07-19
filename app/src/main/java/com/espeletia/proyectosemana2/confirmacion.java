@@ -18,11 +18,11 @@ public class confirmacion extends AppCompatActivity {
 
         Bundle parametros =getIntent().getExtras();
 
-        final String nombre =     parametros.getString(getResources().getString(R.string.pnombre));
-        final String fecha =      parametros.getString(getResources().getString(R.string.pfecha));
-        final String telefono =   parametros.getString(getResources().getString(R.string.ptelefono));
-        final String correo =     parametros.getString(getResources().getString(R.string.pcorreo));
-        final String descripcion =parametros.getString(getResources().getString(R.string.pdescripcion));
+        String nombre =     parametros.getString(getResources().getString(R.string.pnombre));
+        String fecha =      parametros.getString(getResources().getString(R.string.pfecha));
+        String telefono =   parametros.getString(getResources().getString(R.string.ptelefono));
+        String correo =     parametros.getString(getResources().getString(R.string.pcorreo));
+        String descripcion =parametros.getString(getResources().getString(R.string.pdescripcion));
 
         TextView txCDN1 =(TextView) findViewById(R.id.txCDN1);
         TextView txCDF1 =(TextView) findViewById(R.id.txCDF1);
@@ -39,14 +39,6 @@ public class confirmacion extends AppCompatActivity {
         findViewById(R.id.btCDE).setOnClickListener(new AdapterView.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent =new Intent(confirmacion.this,MainActivity.class);
-                intent.putExtra(getResources().getString(R.string.prnombre),nombre);
-                intent.putExtra(getResources().getString(R.string.prfecha),fecha);
-                intent.putExtra(getResources().getString(R.string.prtelefono),telefono);
-                intent.putExtra(getResources().getString(R.string.prcorreo),correo);
-                intent.putExtra(getResources().getString(R.string.prdescripcion),descripcion);
-                startActivity(intent);
                 finish();
             }
         });
